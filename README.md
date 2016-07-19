@@ -37,7 +37,7 @@ Referrer is received asynchronous, but it is stored permanently.
 ## Test
 Need to use ADB.
 
-    adb shell am broadcast -a com.android.vending.INSTALL_REFERRER --es "referrer" "test message"
+    adb shell am broadcast -a com.android.vending.INSTALL_REFERRER --es "referrer" "utm_source%3Dgoogle%26utm_medium%3Dcpc"
     
 ## Reference
 
@@ -46,6 +46,7 @@ Thanks for :
     https://developers.google.com/android/reference/com/google/android/gms/analytics/CampaignTrackingReceiver
     http://www.oodlestechnologies.com/blogs/Tracking-Install-Referrer-or-Campaign-Referrer-for-Android-App-in-Titanium
     https://github.com/Px-Factor/titanium-installreferrer
+    https://support.google.com/analytics/answer/1033867?hl=ko
 
 ## Author
 
