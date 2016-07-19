@@ -20,15 +20,18 @@ The andinstreferrer variable is a reference to the Module object.
 
 ## Usage
 It's work on everywhere.
+Referrer is received asynchronous, but it is stored permanently.
 
     if (OS_ANDROID) {
         var andinstreferrer = require('ti.andinstreferrer');
         var referrer = andinstreferrer.getReferrer();
         Ti.API.debug("andinstreferrer", "getReferrer", referrer);
-
-        andinstreferrer.addEventListener('onReceive', function(e) {
-            Ti.API.debug("andinstreferrer", "onReceive", e.referrer);
-        });
+        
+        if (!referrer) {
+            andinstreferrer.addEventListener('onReceive', function(e) {
+                Ti.API.debug("andinstreferrer", "onReceive", e.referrer);
+            });
+        }
     }
     
 ## Test
