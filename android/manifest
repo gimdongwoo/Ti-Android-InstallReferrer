@@ -11,7 +11,7 @@ license: MIT License
 copyright: Copyright (c) 2016 by BOXOUTTHINKERS
 
 # these should not be edited
-name: TiAndroidInstallReferrer
+name: tiandroidinstallreferrer
 moduleid: ti.andinstreferrer
 guid: ad2ba231-fe65-45cc-91cd-4db141344875
 platform: android
